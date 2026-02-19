@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-data = pd.csv('/content/enjoymentport.csv')
+data = pd.read_csv('/content/enjoysport.csv')
 attribute = np.array(data)[:,:-1]
 target = np.array(data)[:,-1]
 print("Training data:\n")
