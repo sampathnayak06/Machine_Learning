@@ -10,13 +10,13 @@ def train(att,tar):
     if val=='yes':
       specific_h = att[i].copy()
       break
-      for i,val in enumerate(att):
-        if tar[i]=='yes':
-          for x in range(len(specific_h)):
-            if val[x]!=specific_h[x]:
-              specific_h[x]='?'
-            else:
-              pass
-              return specific_h
-              print("\n")
+  for i,val in enumerate(att):
+    if tar[i]=='yes':
+      for x in range(len(specific_h)):
+        if val[x]!=specific_h[x]:
+          specific_h[x]='?'
+        else:
+          pass
+  return specific_h
+print("\n")
 print(train(attribute,target))
